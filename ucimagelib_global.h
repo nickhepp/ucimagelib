@@ -1,0 +1,12 @@
+#ifndef IMAGELIB_GLOBAL_H
+#define IMAGELIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(IMAGELIB_LIBRARY)
+#  define IMAGELIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define IMAGELIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // IMAGELIB_GLOBAL_H
